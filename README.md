@@ -32,7 +32,6 @@ docker-node-sentry/
 
 - Docker installed on your system
 - Node.js (for local development)
-- Sentry account and project setup
 
 ## Quick Start
 
@@ -50,7 +49,18 @@ docker-node-sentry/
 
 3. Access the application at `http://localhost:5000`
 
-## Sentry Integration
+### Using The Image from Docker Hub (login not required)
+
+1. Pull image
+   ```bash
+   docker pull ahmedsallah0/feedback-node:1.0.0
+   ```
+2. Run Image in Container
+   ```bash
+   docker run -p 5000:5000 --name <container-name> --rm -d <image-name> 
+   ```
+   
+## Sentry Integration (for fun)
 
 ## Features
 

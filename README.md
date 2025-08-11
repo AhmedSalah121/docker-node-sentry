@@ -53,7 +53,7 @@ docker-node-sentry/
 
 1. Pull image
    ```bash
-   docker pull ahmedsallah0/feedback-node:1.0.0
+   docker pull ahmedsallah0/feedback-node:<latest-version>
    ```
 2. Run Image in Container
    ```bash

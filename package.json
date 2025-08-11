@@ -1,12 +1,13 @@
 {
-  "name": "data-volume-example",
+  "name": "docker-example",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
-  "author": "Maximilian Schwarzmüller / Academind GmbH",
+  "author": "",
   "license": "ISC",
   "scripts": {
-    "docker-start": "docker run -p 5000:5000 -it  --rm --name feedback-app -d -v /app/feedback:/app/feedback feedback-node:volumes",
+    "docker-run": "docker run -p 5000:5000 --name feedback-app -v feedback:/app/feedback -v pwd:/app -d feedback-node:volumes",
+    "docker-start": "docker start feedback-app",
     "docker-stop": "docker stop feedback-app",
     "docker-remove": "docker rm feedback-app",
     "docker-build": "docker build -t feedback-node:1.0.0 ."
